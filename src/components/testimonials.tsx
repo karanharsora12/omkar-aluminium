@@ -7,30 +7,30 @@ import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
 const testimonials = [
   {
     name: "Rajesh Sharma",
-    project: "Residential Villa",
+    project: "Residential Villa — Bhavnagar",
     testimonial:
-      "Omkar Aluminium did an excellent job on our villa. The aluminium windows and doors are perfectly installed and look great. Their attention to detail is impressive.",
+      "Omkar Alluminium did an excellent job on our villa. The aluminium windows and doors are perfectly installed and look great. Their attention to detail is impressive.",
     rating: 5,
   },
   {
     name: "Priya Mehta",
-    project: "Office Renovation",
+    project: "Office Renovation — Bhavnagar",
     testimonial:
       "Professional team with quality workmanship. They completed our office partition project on time and the finishing is outstanding. Highly recommended.",
     rating: 5,
   },
   {
     name: "Ankit Desai",
-    project: "Commercial Complex",
+    project: "Commercial Complex — Bhavnagar",
     testimonial:
-      "We hired Omkar Aluminium for the facade work on our commercial building. The quality of materials and installation is top-notch. Very satisfied with the result.",
+      "We hired Omkar Alluminium for the facade and sliding window work on our commercial building. The quality of materials and installation is top-notch. Very satisfied.",
     rating: 5,
   },
   {
     name: "Sunita Patil",
-    project: "Home Renovation",
+    project: "Home Renovation — Sihor",
     testimonial:
-      "The sliding doors and windows they installed are smooth and well-fitted. The team was professional and the work was completed within the timeline.",
+      "The sliding windows and powder coating finish they delivered are smooth and well-fitted. The team was professional and the work was completed within the timeline.",
     rating: 5,
   },
 ];
@@ -53,12 +53,12 @@ export default function Testimonials() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent">
-            <span className="h-px w-8 bg-brand-accent" />
+          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-yellow-dark">
+            <span className="h-px w-8 bg-brand-yellow" />
             Testimonials
-            <span className="h-px w-8 bg-brand-accent" />
+            <span className="h-px w-8 bg-brand-yellow" />
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-charcoal sm:text-4xl md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl md:text-5xl">
             Trusted by Our Clients
           </h2>
         </motion.div>
@@ -66,9 +66,8 @@ export default function Testimonials() {
         {/* Testimonial Cards */}
         <div className="mt-16">
           <div className="relative mx-auto max-w-3xl">
-            {/* Quote Icon */}
             <div className="absolute -top-4 left-0 opacity-10">
-              <Quote className="h-16 w-16 text-brand-accent" />
+              <Quote className="h-16 w-16 text-brand-yellow" />
             </div>
 
             <motion.div
@@ -78,28 +77,25 @@ export default function Testimonials() {
               transition={{ duration: 0.5 }}
               className="relative rounded-2xl bg-white p-8 shadow-lg sm:p-12"
             >
-              {/* Rating */}
               <div className="mb-6 flex gap-1">
                 {Array.from({ length: testimonials[current].rating }).map((_, i) => (
                   <Star
                     key={i}
-                    className="h-5 w-5 fill-brand-accent text-brand-accent"
+                    className="h-5 w-5 fill-brand-yellow text-brand-yellow"
                   />
                 ))}
               </div>
 
-              {/* Testimonial */}
               <p className="text-base leading-relaxed text-graphite-light sm:text-lg">
                 &ldquo;{testimonials[current].testimonial}&rdquo;
               </p>
 
-              {/* Author */}
               <div className="mt-8 flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-charcoal text-sm font-bold text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-navy text-sm font-bold text-white">
                   {testimonials[current].name.charAt(0)}
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-charcoal">
+                  <h4 className="text-sm font-bold text-navy">
                     {testimonials[current].name}
                   </h4>
                   <p className="text-xs text-graphite-light">
@@ -113,7 +109,7 @@ export default function Testimonials() {
             <div className="mt-8 flex items-center justify-center gap-4">
               <button
                 onClick={prev}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-surface-dark bg-white text-charcoal transition-colors hover:border-brand-accent hover:text-brand-accent"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-surface-dark bg-white text-navy transition-colors hover:border-brand-yellow hover:text-brand-yellow-dark"
                 aria-label="Previous testimonial"
               >
                 <ChevronLeft className="h-4 w-4" />
@@ -126,7 +122,7 @@ export default function Testimonials() {
                     onClick={() => setCurrent(i)}
                     className={`h-2 rounded-full transition-all duration-300 ${
                       i === current
-                        ? "w-8 bg-brand-accent"
+                        ? "w-8 bg-brand-yellow"
                         : "w-2 bg-surface-dark hover:bg-aluminium"
                     }`}
                     aria-label={`Go to testimonial ${i + 1}`}
@@ -136,7 +132,7 @@ export default function Testimonials() {
 
               <button
                 onClick={next}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-surface-dark bg-white text-charcoal transition-colors hover:border-brand-accent hover:text-brand-accent"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-surface-dark bg-white text-navy transition-colors hover:border-brand-yellow hover:text-brand-yellow-dark"
                 aria-label="Next testimonial"
               >
                 <ChevronRight className="h-4 w-4" />

@@ -10,44 +10,45 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Omkar Aluminium | Precision in Aluminium. Built to Last.",
-    template: "%s | Omkar Aluminium",
+    default: "Omkar Alluminium | Crafting Alluminium Excellence",
+    template: "%s | Omkar Alluminium",
   },
   description:
-    "Omkar Aluminium delivers premium aluminium solutions including doors, windows, partitions, facades, and custom fabrication for residential, commercial, and architectural projects.",
+    "Omkar Alluminium delivers premium aluminium solutions including windows, doors, partitions, sliding systems, grills, and powder coating for residential, commercial, and architectural projects in Bhavnagar.",
   keywords: [
-    "aluminium doors",
     "aluminium windows",
-    "aluminium fabrication",
+    "aluminium doors",
     "aluminium partitions",
-    "aluminium facade",
-    "custom aluminium work",
-    "aluminium solutions",
-    "aluminium contractor",
+    "sliding windows",
+    "aluminium grills",
+    "powder coating",
+    "aluminium fabrication",
+    "aluminium solutions bhavnagar",
+    "aluminium contractor bhavnagar",
   ],
-  authors: [{ name: "Omkar Aluminium" }],
-  creator: "Omkar Aluminium",
+  authors: [{ name: "Omkar Alluminium" }],
+  creator: "Omkar Alluminium",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://omkeraluminium.com",
-    siteName: "Omkar Aluminium",
-    title: "Omkar Aluminium | Precision in Aluminium. Built to Last.",
+    url: "https://omkaralluminium.com",
+    siteName: "Omkar Alluminium",
+    title: "Omkar Alluminium | Crafting Alluminium Excellence",
     description:
-      "Premium aluminium solutions for modern homes, commercial spaces and architectural projects.",
+      "Premium aluminium solutions — You Desire, We Display. Windows, doors, partitions, sliding systems, grills & powder coating in Bhavnagar.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Omkar Aluminium | Precision in Aluminium. Built to Last.",
+    title: "Omkar Alluminium | Crafting Alluminium Excellence",
     description:
-      "Premium aluminium solutions for modern homes, commercial spaces and architectural projects.",
+      "Premium aluminium solutions — You Desire, We Display. Windows, doors, partitions, sliding systems, grills & powder coating in Bhavnagar.",
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://omkeraluminium.com",
+    canonical: "https://omkaralluminium.com",
   },
 };
 
@@ -63,21 +64,26 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Omkar Aluminium",
+              name: "Omkar Alluminium",
               description:
-                "Premium aluminium solutions including doors, windows, partitions, facades, and custom fabrication.",
-              url: "https://omkeraluminium.com",
-              telephone: "+91-XXXXXXXXXX",
+                "Premium aluminium solutions including windows, doors, partitions, sliding systems, grills, and powder coating.",
+              url: "https://omkaralluminium.com",
+              telephone: "+91-9427751630",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "",
-                addressRegion: "",
+                streetAddress: "Siddharth Ghoghla Road, Opp. HATKESH 2, Near Sahjanand Society",
+                addressLocality: "Bhavnagar",
+                addressRegion: "Gujarat",
                 addressCountry: "IN",
               },
               areaServed: {
-                "@type": "Country",
-                name: "India",
+                "@type": "City",
+                name: "Bhavnagar",
               },
+              founder: [
+                { "@type": "Person", name: "Shaileshbhai Mirza" },
+                { "@type": "Person", name: "Uttambhai Mirza" },
+              ],
               sameAs: [],
             }),
           }}
@@ -88,11 +94,11 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Omkar Aluminium",
-              url: "https://omkeraluminium.com",
-              logo: "https://omkeraluminium.com/logo.png",
+              name: "Omkar Alluminium",
+              url: "https://omkaralluminium.com",
+              logo: "https://omkaralluminium.com/logo.png",
               description:
-                "Precision in Aluminium. Built to Last.",
+                "Crafting Alluminium Excellence. You Desire, We Display.",
             }),
           }}
         />

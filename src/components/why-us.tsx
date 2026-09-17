@@ -6,39 +6,39 @@ import { Shield, Ruler, Lightbulb, Palette, Wrench, Headphones } from "lucide-re
 const features = [
   {
     icon: Shield,
-    title: "Quality Materials",
+    title: "Premium Quality",
     description:
-      "Reliable materials selected for durability and performance.",
+      "Reliable materials selected for durability and performance. Beauty with strength.",
   },
   {
     icon: Ruler,
     title: "Precision Workmanship",
     description:
-      "Careful measurement, fabrication and finishing.",
+      "Careful measurement, fabrication and finishing in every project.",
   },
   {
     icon: Lightbulb,
     title: "Custom Solutions",
     description:
-      "Solutions designed around individual project requirements.",
+      "You desire, we display — solutions designed around your requirements.",
   },
   {
     icon: Palette,
     title: "Modern Designs",
     description:
-      "Contemporary aluminium systems for modern spaces.",
+      "Contemporary aluminium systems for modern spaces and architecture.",
   },
   {
     icon: Wrench,
     title: "Professional Installation",
     description:
-      "Clean and accurate installation.",
+      "Clean and accurate installation with expert craftsmanship.",
   },
   {
     icon: Headphones,
     title: "Reliable Support",
     description:
-      "Clear communication from enquiry to completion.",
+      "Clear communication and trusted support from enquiry to completion.",
   },
 ];
 
@@ -54,14 +54,17 @@ export default function WhyUs() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent">
-            <span className="h-px w-8 bg-brand-accent" />
+          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-yellow-dark">
+            <span className="h-px w-8 bg-brand-yellow" />
             Why Choose Us
-            <span className="h-px w-8 bg-brand-accent" />
+            <span className="h-px w-8 bg-brand-yellow" />
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-charcoal sm:text-4xl md:text-5xl">
-            Why Choose Omkar Aluminium?
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl md:text-5xl">
+            Why Choose Omkar Alluminium?
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base text-graphite-light">
+            Premium Quality | Trust | Beauty With Strength
+          </p>
         </motion.div>
 
         {/* Features Grid */}
@@ -75,19 +78,16 @@ export default function WhyUs() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="group relative rounded-2xl bg-white p-8 shadow-sm transition-all duration-500 hover:shadow-xl hover:-translate-y-1"
             >
-              {/* Icon */}
-              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-charcoal transition-all duration-500 group-hover:bg-brand-accent group-hover:scale-110">
+              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-navy transition-all duration-500 group-hover:bg-brand-yellow group-hover:scale-110">
                 <feature.icon className="h-6 w-6 text-white" />
               </div>
 
-              {/* Content */}
-              <h3 className="text-lg font-bold text-charcoal">{feature.title}</h3>
+              <h3 className="text-lg font-bold text-navy">{feature.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-graphite-light">
                 {feature.description}
               </p>
 
-              {/* Hover line */}
-              <div className="absolute bottom-0 left-8 right-8 h-0.5 origin-left scale-x-0 bg-brand-accent transition-transform duration-500 group-hover:scale-x-100" />
+              <div className="absolute bottom-0 left-8 right-8 h-0.5 origin-left scale-x-0 bg-brand-yellow transition-transform duration-500 group-hover:scale-x-100" />
             </motion.div>
           ))}
         </div>

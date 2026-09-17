@@ -1,50 +1,50 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Hammer, DoorOpen, Wrench, Building2, Home, Landmark } from "lucide-react";
+import { LayoutGrid, DoorOpen, Grid3x3, MoveHorizontal, Fence, PaintBucket } from "lucide-react";
 
 const services = [
   {
     number: "01",
-    title: "Aluminium Fabrication",
+    title: "Aluminium Windows",
     description:
-      "Expert fabrication of aluminium products using precision techniques and quality materials.",
-    icon: Hammer,
+      "Durable and elegant window systems designed for modern homes and commercial spaces.",
+    icon: LayoutGrid,
   },
   {
     number: "02",
-    title: "Door & Window Installation",
+    title: "Aluminium Doors",
     description:
-      "Professional installation of aluminium doors and windows with accurate fitting.",
+      "Premium aluminium doors for residential and commercial spaces with secure locking systems.",
     icon: DoorOpen,
   },
   {
     number: "03",
-    title: "Custom Aluminium Work",
+    title: "Aluminium Partitions",
     description:
-      "Tailored aluminium solutions designed and built to your exact specifications.",
-    icon: Wrench,
+      "Modern office and interior partition solutions for efficient space management.",
+    icon: Grid3x3,
   },
   {
     number: "04",
-    title: "Commercial Projects",
+    title: "Sliding Windows",
     description:
-      "Large-scale aluminium solutions for commercial buildings, offices and retail spaces.",
-    icon: Building2,
+      "Smooth and functional sliding window systems that save space and enhance aesthetics.",
+    icon: MoveHorizontal,
   },
   {
     number: "05",
-    title: "Residential Projects",
+    title: "Aluminium Grills",
     description:
-      "Premium aluminium products and installation for homes and residential complexes.",
-    icon: Home,
+      "Strong and decorative aluminium grill solutions for enhanced security and design.",
+    icon: Fence,
   },
   {
     number: "06",
-    title: "Architectural Solutions",
+    title: "Powder Coating Finish",
     description:
-      "Specialized aluminium systems for modern architectural designs and facades.",
-    icon: Landmark,
+      "Professional powder coating services for a durable, premium finish on aluminium products.",
+    icon: PaintBucket,
   },
 ];
 
@@ -60,14 +60,17 @@ export default function Services() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent">
-            <span className="h-px w-8 bg-brand-accent" />
-            What We Do
-            <span className="h-px w-8 bg-brand-accent" />
+          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-yellow-dark">
+            <span className="h-px w-8 bg-brand-yellow" />
+            Our Services
+            <span className="h-px w-8 bg-brand-yellow" />
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-charcoal sm:text-4xl md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl md:text-5xl">
             What We Do
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base text-graphite-light">
+            Our range of aluminium services covers everything from windows and doors to powder coating
+          </p>
         </motion.div>
 
         {/* Services Grid */}
@@ -79,20 +82,17 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="group relative rounded-2xl border border-surface-dark bg-surface/50 p-8 transition-all duration-500 hover:border-brand-accent/30 hover:bg-white hover:shadow-xl"
+              className="group relative rounded-2xl border border-surface-dark bg-surface/50 p-8 transition-all duration-500 hover:border-brand-yellow/30 hover:bg-white hover:shadow-xl"
             >
-              {/* Number */}
-              <span className="absolute right-6 top-6 text-5xl font-bold text-surface-dark transition-colors duration-500 group-hover:text-brand-accent/10">
+              <span className="absolute right-6 top-6 text-5xl font-bold text-surface-dark transition-colors duration-500 group-hover:text-brand-yellow/10">
                 {service.number}
               </span>
 
-              {/* Icon */}
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-charcoal transition-colors duration-500 group-hover:bg-brand-accent">
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-navy transition-colors duration-500 group-hover:bg-brand-yellow">
                 <service.icon className="h-6 w-6 text-white" />
               </div>
 
-              {/* Content */}
-              <h3 className="text-xl font-bold text-charcoal">{service.title}</h3>
+              <h3 className="text-xl font-bold text-navy">{service.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-graphite-light">
                 {service.description}
               </p>

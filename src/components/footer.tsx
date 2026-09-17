@@ -11,49 +11,58 @@ const companyLinks = [
 ];
 
 const productLinks = [
-  { label: "Aluminium Doors", href: "#products" },
   { label: "Aluminium Windows", href: "#products" },
-  { label: "Sliding Systems", href: "#products" },
+  { label: "Aluminium Doors", href: "#products" },
+  { label: "Sliding Windows", href: "#products" },
   { label: "Partitions", href: "#products" },
-  { label: "Facades", href: "#products" },
-  { label: "Custom Work", href: "#products" },
+  { label: "Aluminium Grills", href: "#products" },
+  { label: "Powder Coating", href: "#products" },
 ];
 
 const contactLinks = [
-  { icon: Phone, label: "+91-XXXXXXXXXX", href: "tel:+91XXXXXXXXXX" },
+  { icon: Phone, label: "Shaileshbhai: 94277 51630", href: "tel:+919427751630" },
+  { icon: Phone, label: "Uttambhai: 99984 54234", href: "tel:+919998454234" },
   {
     icon: MessageCircle,
-    label: "+91-XXXXXXXXXX",
-    href: "https://wa.me/91XXXXXXXXXX",
+    label: "WhatsApp: 94277 51630",
+    href: "https://wa.me/919427751630",
   },
-  { icon: Mail, label: "info@omkeraluminium.com", href: "mailto:info@omkeraluminium.com" },
-  { icon: MapPin, label: "Your Business Address", href: null },
+  { icon: Mail, label: "info@omkaralluminium.com", href: "mailto:info@omkaralluminium.com" },
+  {
+    icon: MapPin,
+    label: "Siddharth Ghoghla Road, Bhavnagar",
+    href: null,
+  },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-charcoal">
+    <footer className="bg-navy-dark">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Main Footer */}
         <div className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded bg-brand-accent">
-                <span className="text-sm font-bold text-white">O</span>
+              <div className="flex h-9 w-9 items-center justify-center rounded bg-brand-yellow">
+                <span className="text-sm font-bold text-navy">OA</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-lg font-bold leading-tight tracking-tight text-white">
                   OMKAR
                 </span>
                 <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-aluminium-dark">
-                  ALUMINIUM
+                  ALLUMINIUM
                 </span>
               </div>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-white/50">
-              Precision in Aluminium. Built to Last. Premium aluminium solutions
-              for modern homes, commercial spaces and architectural projects.
+              Crafting Alluminium Excellence. You Desire, We Display.
+              Premium aluminium solutions for modern homes, commercial spaces and
+              architectural projects.
+            </p>
+            <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-brand-yellow/60">
+              Premium Quality | Trust | Beauty With Strength
             </p>
           </div>
 
@@ -67,7 +76,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-white/50 transition-colors hover:text-brand-accent"
+                    className="text-sm text-white/50 transition-colors hover:text-brand-yellow"
                   >
                     {link.label}
                   </a>
@@ -86,7 +95,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-white/50 transition-colors hover:text-brand-accent"
+                    className="text-sm text-white/50 transition-colors hover:text-brand-yellow"
                   >
                     {link.label}
                   </a>
@@ -103,7 +112,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-4">
               {contactLinks.map((link) => (
                 <li key={link.label} className="flex items-start gap-3">
-                  <link.icon className="mt-0.5 h-4 w-4 shrink-0 text-brand-accent" />
+                  <link.icon className="mt-0.5 h-4 w-4 shrink-0 text-brand-yellow" />
                   {link.href ? (
                     <a
                       href={link.href}
@@ -115,7 +124,7 @@ export default function Footer() {
                           ? "noopener noreferrer"
                           : undefined
                       }
-                      className="text-sm text-white/50 transition-colors hover:text-brand-accent"
+                      className="text-sm text-white/50 transition-colors hover:text-brand-yellow"
                     >
                       {link.label}
                     </a>
@@ -132,7 +141,7 @@ export default function Footer() {
         <div className="border-t border-white/10 py-6">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-xs text-white/30">
-              &copy; {new Date().getFullYear()} Omkar Aluminium. All Rights
+              &copy; {new Date().getFullYear()} Omkar Alluminium. All Rights
               Reserved.
             </p>
             <div className="flex items-center gap-6">

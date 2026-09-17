@@ -5,8 +5,7 @@ import { ArrowRight, Phone } from "lucide-react";
 
 export default function CTASection() {
   return (
-    <section className="relative overflow-hidden bg-charcoal py-20 md:py-32">
-      {/* Background */}
+    <section className="relative overflow-hidden bg-navy py-20 md:py-32">
       <div className="absolute inset-0">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -15,11 +14,10 @@ export default function CTASection() {
               "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80')",
           }}
         />
-        <div className="absolute inset-0 bg-charcoal/85" />
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 to-charcoal/60" />
+        <div className="absolute inset-0 bg-navy/85" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/90 to-navy/60" />
       </div>
 
-      {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full border border-white/5" />
         <div className="absolute -bottom-20 -left-20 h-48 w-48 rounded-full border border-white/5" />
@@ -34,30 +32,30 @@ export default function CTASection() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
-              Have an Aluminium Project in Mind?
+              Have an Alluminium Project in Mind?
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/70">
               Tell us what you need. Our team will help you find the right
-              aluminium solution for your project.
+              aluminium solution for your project. You Desire, We Display.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <a
                 href="#contact"
-                className="group inline-flex items-center gap-2 rounded-lg bg-brand-accent px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand-accent/25 transition-all duration-300 hover:bg-brand-accent-light hover:shadow-xl hover:shadow-brand-accent/30"
+                className="group inline-flex items-center gap-2 rounded-lg bg-brand-yellow px-8 py-3.5 text-sm font-bold text-navy shadow-lg shadow-brand-yellow/25 transition-all duration-300 hover:bg-brand-yellow-light hover:shadow-xl hover:shadow-brand-yellow/30"
               >
                 Get a Free Quote
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </a>
               <a
-                href="tel:+91XXXXXXXXXX"
+                href="tel:+919427751630"
                 className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:border-white/40 hover:bg-white/5"
               >
                 <Phone className="h-4 w-4" />
-                Contact Us
+                Call Us
               </a>
               <a
-                href="https://wa.me/91XXXXXXXXXX"
+                href="https://wa.me/919427751630"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-700"

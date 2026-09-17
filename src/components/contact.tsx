@@ -14,26 +14,32 @@ import {
 const contactInfo = [
   {
     icon: Phone,
-    label: "Phone",
-    value: "+91-XXXXXXXXXX",
-    href: "tel:+91XXXXXXXXXX",
+    label: "Shaileshbhai Mistri",
+    value: "+91-94277 51630",
+    href: "tel:+919427751630",
+  },
+  {
+    icon: Phone,
+    label: "Uttambhai Mistri",
+    value: "+91-99984 54234",
+    href: "tel:+919998454234",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    value: "+91-XXXXXXXXXX",
-    href: "https://wa.me/91XXXXXXXXXX",
+    value: "+91-94277 51630",
+    href: "https://wa.me/919427751630",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "info@omkeraluminium.com",
-    href: "mailto:info@omkeraluminium.com",
+    value: "info@omkaralluminium.com",
+    href: "mailto:info@omkaralluminium.com",
   },
   {
     icon: MapPin,
     label: "Address",
-    value: "Your Business Address, City, State",
+    value: "Siddharth Ghoghla Road, Opp. HATKESH 2, Near Sahjanand Society, Bhavnagar.",
     href: null,
   },
   {
@@ -73,7 +79,6 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
     console.log("Form submitted:", formData);
   };
 
@@ -88,12 +93,12 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent">
-            <span className="h-px w-8 bg-brand-accent" />
+          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-yellow-dark">
+            <span className="h-px w-8 bg-brand-yellow" />
             Get in Touch
-            <span className="h-px w-8 bg-brand-accent" />
+            <span className="h-px w-8 bg-brand-yellow" />
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-charcoal sm:text-4xl md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl md:text-5xl">
             Let&apos;s Discuss Your Project
           </h2>
         </motion.div>
@@ -107,17 +112,17 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-2"
           >
-            <div className="rounded-2xl bg-charcoal p-8">
+            <div className="rounded-2xl bg-navy p-8">
               <h3 className="text-xl font-bold text-white">Contact Information</h3>
               <p className="mt-2 text-sm text-white/60">
-                Reach out to us through any of the following channels.
+                Reach out to us for premium aluminium solutions.
               </p>
 
-              <div className="mt-8 space-y-6">
+              <div className="mt-8 space-y-5">
                 {contactInfo.map((info) => (
-                  <div key={info.label} className="flex items-start gap-4">
+                  <div key={`${info.label}-${info.value}`} className="flex items-start gap-4">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/10">
-                      <info.icon className="h-5 w-5 text-brand-accent" />
+                      <info.icon className="h-5 w-5 text-brand-yellow" />
                     </div>
                     <div>
                       <p className="text-xs font-medium uppercase tracking-wider text-white/40">
@@ -134,7 +139,7 @@ export default function Contact() {
                               ? "noopener noreferrer"
                               : undefined
                           }
-                          className="mt-0.5 text-sm text-white transition-colors hover:text-brand-accent"
+                          className="mt-0.5 text-sm text-white transition-colors hover:text-brand-yellow"
                         >
                           {info.value}
                         </a>
@@ -149,14 +154,14 @@ export default function Contact() {
               {/* Quick Actions */}
               <div className="mt-8 flex gap-3">
                 <a
-                  href="tel:+91XXXXXXXXXX"
-                  className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-brand-accent px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-accent-light"
+                  href="tel:+919427751630"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-brand-yellow px-4 py-3 text-sm font-bold text-navy transition-colors hover:bg-brand-yellow-light"
                 >
                   <Phone className="h-4 w-4" />
                   Call Now
                 </a>
                 <a
-                  href="https://wa.me/91XXXXXXXXXX"
+                  href="https://wa.me/919427751630"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-green-600 px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-green-700"
@@ -180,7 +185,7 @@ export default function Contact() {
               onSubmit={handleSubmit}
               className="rounded-2xl bg-white p-8 shadow-sm"
             >
-              <h3 className="text-xl font-bold text-charcoal">Send an Enquiry</h3>
+              <h3 className="text-xl font-bold text-navy">Send an Enquiry</h3>
               <p className="mt-2 text-sm text-graphite-light">
                 Fill out the form below and we&apos;ll get back to you shortly.
               </p>
@@ -200,7 +205,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="mt-2 w-full rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-charcoal outline-none transition-colors focus:border-brand-accent focus:bg-white"
+                    className="mt-2 w-full rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-navy outline-none transition-colors focus:border-brand-yellow focus:bg-white"
                     placeholder="Your name"
                   />
                 </div>
@@ -218,7 +223,7 @@ export default function Contact() {
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="mt-2 w-full rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-charcoal outline-none transition-colors focus:border-brand-accent focus:bg-white"
+                    className="mt-2 w-full rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-navy outline-none transition-colors focus:border-brand-yellow focus:bg-white"
                     placeholder="+91-XXXXXXXXXX"
                   />
                 </div>
@@ -235,7 +240,7 @@ export default function Contact() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="mt-2 w-full rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-charcoal outline-none transition-colors focus:border-brand-accent focus:bg-white"
+                    className="mt-2 w-full rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-navy outline-none transition-colors focus:border-brand-yellow focus:bg-white"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -252,7 +257,7 @@ export default function Contact() {
                     required
                     value={formData.projectType}
                     onChange={handleChange}
-                    className="mt-2 w-full rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-charcoal outline-none transition-colors focus:border-brand-accent focus:bg-white"
+                    className="mt-2 w-full rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-navy outline-none transition-colors focus:border-brand-yellow focus:bg-white"
                   >
                     <option value="">Select project type</option>
                     {projectTypes.map((type) => (
@@ -275,7 +280,7 @@ export default function Contact() {
                     name="location"
                     value={formData.location}
                     onChange={handleChange}
-                    className="mt-2 w-full rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-charcoal outline-none transition-colors focus:border-brand-accent focus:bg-white"
+                    className="mt-2 w-full rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-navy outline-none transition-colors focus:border-brand-yellow focus:bg-white"
                     placeholder="Project location"
                   />
                 </div>
@@ -292,8 +297,8 @@ export default function Contact() {
                     name="requirement"
                     value={formData.requirement}
                     onChange={handleChange}
-                    className="mt-2 w-full rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-charcoal outline-none transition-colors focus:border-brand-accent focus:bg-white"
-                    placeholder="e.g., Aluminium doors, windows"
+                    className="mt-2 w-full rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-navy outline-none transition-colors focus:border-brand-yellow focus:bg-white"
+                    placeholder="e.g., Aluminium windows, doors"
                   />
                 </div>
                 <div className="sm:col-span-2">
@@ -309,7 +314,7 @@ export default function Contact() {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className="mt-2 w-full resize-none rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-charcoal outline-none transition-colors focus:border-brand-accent focus:bg-white"
+                    className="mt-2 w-full resize-none rounded-lg border border-surface-dark bg-surface/50 px-4 py-3 text-sm text-navy outline-none transition-colors focus:border-brand-yellow focus:bg-white"
                     placeholder="Tell us about your project..."
                   />
                 </div>
@@ -317,12 +322,12 @@ export default function Contact() {
                   <label className="block text-xs font-medium uppercase tracking-wider text-graphite">
                     Upload Images / Documents
                   </label>
-                  <div className="mt-2 flex items-center justify-center rounded-lg border-2 border-dashed border-surface-dark p-6 transition-colors hover:border-brand-accent/50">
+                  <div className="mt-2 flex items-center justify-center rounded-lg border-2 border-dashed border-surface-dark p-6 transition-colors hover:border-brand-yellow/50">
                     <div className="text-center">
                       <Upload className="mx-auto h-8 w-8 text-aluminium-dark" />
                       <p className="mt-2 text-sm text-graphite-light">
                         Drag & drop files here or{" "}
-                        <span className="font-medium text-brand-accent">
+                        <span className="font-medium text-brand-yellow-dark">
                           browse
                         </span>
                       </p>
@@ -336,7 +341,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="mt-6 w-full rounded-lg bg-charcoal px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-graphite hover:shadow-lg"
+                className="mt-6 w-full rounded-lg bg-navy px-8 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:bg-navy-light hover:shadow-lg"
               >
                 Send Enquiry
               </button>

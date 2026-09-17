@@ -42,7 +42,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="relative bg-charcoal py-20 md:py-32 overflow-hidden">
+    <section className="relative bg-navy py-20 md:py-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -52,10 +52,10 @@ export default function Process() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent">
-            <span className="h-px w-8 bg-brand-accent" />
+          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-yellow">
+            <span className="h-px w-8 bg-brand-yellow" />
             Our Process
-            <span className="h-px w-8 bg-brand-accent" />
+            <span className="h-px w-8 bg-brand-yellow" />
           </span>
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
             From Requirement to Reality
@@ -65,18 +65,16 @@ export default function Process() {
         {/* Horizontal Timeline - Desktop */}
         <div className="mt-20 hidden md:block">
           <div className="relative">
-            {/* Line */}
             <div className="absolute left-0 right-0 top-6 h-px bg-white/10" />
             <motion.div
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute left-0 top-6 h-px origin-left bg-gradient-to-r from-brand-accent to-brand-accent/30"
+              className="absolute left-0 top-6 h-px origin-left bg-gradient-to-r from-brand-yellow to-brand-yellow/30"
               style={{ width: "100%" }}
             />
 
-            {/* Steps */}
             <div className="grid grid-cols-7 gap-4">
               {steps.map((step, i) => (
                 <motion.div
@@ -87,14 +85,12 @@ export default function Process() {
                   transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
                   className="relative text-center"
                 >
-                  {/* Dot */}
-                  <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-full border-2 border-brand-accent bg-charcoal">
-                    <span className="text-sm font-bold text-brand-accent">
+                  <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-full border-2 border-brand-yellow bg-navy">
+                    <span className="text-sm font-bold text-brand-yellow">
                       {step.number}
                     </span>
                   </div>
 
-                  {/* Content */}
                   <h3 className="text-sm font-bold text-white">{step.title}</h3>
                   <p className="mt-2 text-xs leading-relaxed text-white/50">
                     {step.description}
@@ -108,17 +104,15 @@ export default function Process() {
         {/* Vertical Timeline - Mobile */}
         <div className="mt-16 md:hidden">
           <div className="relative ml-4">
-            {/* Line */}
             <div className="absolute left-0 top-0 bottom-0 w-px bg-white/10" />
             <motion.div
               initial={{ scaleY: 0 }}
               whileInView={{ scaleY: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute left-0 top-0 bottom-0 w-px origin-top bg-gradient-to-b from-brand-accent to-brand-accent/30"
+              className="absolute left-0 top-0 bottom-0 w-px origin-top bg-gradient-to-b from-brand-yellow to-brand-yellow/30"
             />
 
-            {/* Steps */}
             <div className="space-y-10">
               {steps.map((step, i) => (
                 <motion.div
@@ -129,14 +123,12 @@ export default function Process() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="relative flex items-start gap-6 pl-8"
                 >
-                  {/* Dot */}
-                  <div className="absolute left-0 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full border-2 border-brand-accent bg-charcoal">
-                    <span className="text-xs font-bold text-brand-accent">
+                  <div className="absolute left-0 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full border-2 border-brand-yellow bg-navy">
+                    <span className="text-xs font-bold text-brand-yellow">
                       {step.number}
                     </span>
                   </div>
 
-                  {/* Content */}
                   <div>
                     <h3 className="text-base font-bold text-white">
                       {step.title}

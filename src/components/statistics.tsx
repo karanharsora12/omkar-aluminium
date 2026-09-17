@@ -53,8 +53,7 @@ const stats = [
 
 export default function Statistics() {
   return (
-    <section className="relative bg-charcoal py-20 md:py-32">
-      {/* Background Pattern */}
+    <section className="relative bg-navy py-20 md:py-32">
       <div className="absolute inset-0 opacity-5">
         <div
           className="absolute inset-0"

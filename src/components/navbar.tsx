@@ -53,14 +53,14 @@ export default function Navbar() {
             {/* Logo */}
             <a href="#home" className="flex items-center gap-2">
               <div className="flex items-center">
-                <div className="mr-2 flex h-8 w-8 items-center justify-center rounded bg-charcoal">
-                  <span className="text-sm font-bold text-white">O</span>
+                <div className="mr-2 flex h-9 w-9 items-center justify-center rounded bg-navy">
+                  <span className="text-sm font-bold text-white">OA</span>
                 </div>
                 <div className="flex flex-col">
                   <span
                     className={cn(
                       "text-lg font-bold leading-tight tracking-tight transition-colors duration-300",
-                      scrolled ? "text-charcoal" : "text-white"
+                      scrolled ? "text-navy" : "text-white"
                     )}
                   >
                     OMKAR
@@ -71,7 +71,7 @@ export default function Navbar() {
                       scrolled ? "text-aluminium-dark" : "text-aluminium-light"
                     )}
                   >
-                    ALUMINIUM
+                    ALLUMINIUM
                   </span>
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default function Navbar() {
                   className={cn(
                     "relative px-4 py-2 text-sm font-medium transition-colors duration-300",
                     scrolled
-                      ? "text-graphite hover:text-charcoal"
+                      ? "text-graphite hover:text-navy"
                       : "text-white/80 hover:text-white"
                   )}
                 >
@@ -98,11 +98,11 @@ export default function Navbar() {
             {/* Desktop CTA */}
             <div className="hidden items-center gap-3 md:flex">
               <a
-                href="tel:+91XXXXXXXXXX"
+                href="tel:+919427751630"
                 className={cn(
                   "flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-300",
                   scrolled
-                    ? "text-graphite hover:text-charcoal"
+                    ? "text-graphite hover:text-navy"
                     : "text-white/80 hover:text-white"
                 )}
               >
@@ -111,7 +111,7 @@ export default function Navbar() {
               </a>
               <a
                 href="#contact"
-                className="rounded-lg bg-charcoal px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-graphite hover:shadow-lg"
+                className="rounded-lg bg-brand-yellow px-5 py-2.5 text-sm font-bold text-navy transition-all duration-300 hover:bg-brand-yellow-light hover:shadow-lg"
               >
                 Get a Quote
               </a>
@@ -123,7 +123,7 @@ export default function Navbar() {
               className={cn(
                 "flex h-10 w-10 items-center justify-center rounded-lg transition-colors md:hidden",
                 scrolled
-                  ? "text-charcoal hover:bg-surface"
+                  ? "text-navy hover:bg-surface"
                   : "text-white hover:bg-white/10"
               )}
               aria-label="Toggle menu"
@@ -142,7 +142,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-charcoal/95 backdrop-blur-lg md:hidden"
+            className="fixed inset-0 z-40 bg-navy/95 backdrop-blur-lg md:hidden"
           >
             <motion.nav
               initial={{ opacity: 0, y: 20 }}
@@ -159,7 +159,7 @@ export default function Navbar() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
-                  className="text-2xl font-semibold text-white transition-colors hover:text-aluminium"
+                  className="text-2xl font-semibold text-white transition-colors hover:text-brand-yellow"
                 >
                   {link.label}
                 </motion.a>
@@ -171,14 +171,14 @@ export default function Navbar() {
                 className="mt-6 flex flex-col gap-3"
               >
                 <a
-                  href="tel:+91XXXXXXXXXX"
+                  href="tel:+919427751630"
                   className="flex items-center justify-center gap-2 rounded-lg border border-white/20 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
                 >
                   <Phone className="h-4 w-4" />
                   Call Now
                 </a>
                 <a
-                  href="https://wa.me/91XXXXXXXXXX"
+                  href="https://wa.me/919427751630"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-lg bg-green-600 px-8 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-green-700"

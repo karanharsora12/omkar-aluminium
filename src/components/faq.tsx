@@ -8,12 +8,12 @@ const faqs = [
   {
     question: "What aluminium products do you provide?",
     answer:
-      "We provide a comprehensive range of aluminium products including doors, windows, sliding systems, partitions, facades, glass & aluminium systems, and custom aluminium work for residential, commercial, and architectural projects.",
+      "We provide a comprehensive range of aluminium products including windows, doors, partitions, sliding windows, grills, facades, and custom aluminium work. We also offer professional powder coating finish services.",
   },
   {
     question: "Do you provide customized aluminium solutions?",
     answer:
-      "Yes, we specialize in custom aluminium fabrication. Our team works closely with clients to understand their specific requirements and delivers tailored solutions that meet their exact specifications.",
+      "Yes, we specialize in custom aluminium fabrication. As we say — You Desire, We Display. Our team works closely with clients to understand their specific requirements and delivers tailored solutions.",
   },
   {
     question: "Do you handle installation?",
@@ -23,17 +23,22 @@ const faqs = [
   {
     question: "Do you work on residential projects?",
     answer:
-      "Yes, we work extensively on residential projects including individual homes, apartments, and housing complexes. We offer doors, windows, sliding systems, and other aluminium solutions for homes.",
+      "Yes, we work extensively on residential projects including individual homes, apartments, and housing complexes in Bhavnagar and surrounding areas. We offer windows, doors, sliding systems, and grills for homes.",
   },
   {
     question: "Do you undertake commercial projects?",
     answer:
-      "Yes, we undertake commercial projects of all sizes including offices, retail spaces, commercial buildings, and institutional projects. We have the expertise and resources to handle large-scale commercial installations.",
+      "Yes, we undertake commercial projects of all sizes including offices, retail spaces, and commercial buildings. We have the expertise and resources to handle large-scale commercial installations.",
+  },
+  {
+    question: "Do you offer powder coating services?",
+    answer:
+      "Yes, we provide professional powder coating finish services for aluminium products. This adds durability, protection, and a premium aesthetic finish to the aluminium surface.",
   },
   {
     question: "How can I request a quotation?",
     answer:
-      "You can request a quotation by calling us, sending a WhatsApp message, filling out the enquiry form on our website, or sending us an email. Our team will get back to you with a detailed quotation based on your requirements.",
+      "You can request a quotation by calling us at 94277 51630 or 99984 54234, sending a WhatsApp message, filling out the enquiry form on our website, or visiting our office on Siddharth Ghoghla Road, Bhavnagar.",
   },
   {
     question: "How long does an aluminium project take?",
@@ -56,12 +61,12 @@ export default function FAQ() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent">
-            <span className="h-px w-8 bg-brand-accent" />
+          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-yellow-dark">
+            <span className="h-px w-8 bg-brand-yellow" />
             FAQ
-            <span className="h-px w-8 bg-brand-accent" />
+            <span className="h-px w-8 bg-brand-yellow" />
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-charcoal sm:text-4xl md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy sm:text-4xl md:text-5xl">
             Frequently Asked Questions
           </h2>
         </motion.div>
@@ -79,12 +84,12 @@ export default function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="flex w-full items-center justify-between py-5 text-left transition-colors hover:text-brand-accent"
+                className="flex w-full items-center justify-between py-5 text-left transition-colors hover:text-brand-yellow-dark"
               >
-                <span className="pr-4 text-base font-semibold text-charcoal">
+                <span className="pr-4 text-base font-semibold text-navy">
                   {faq.question}
                 </span>
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-surface-dark text-charcoal transition-all duration-300 group-hover:border-brand-accent">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-surface-dark text-navy transition-all duration-300 group-hover:border-brand-yellow">
                   {openIndex === i ? (
                     <Minus className="h-4 w-4" />
                   ) : (

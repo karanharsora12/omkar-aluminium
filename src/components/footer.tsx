@@ -30,7 +30,7 @@ const contactLinks = [
   { icon: Mail, label: "info@omkaralluminium.com", href: "mailto:info@omkaralluminium.com" },
   {
     icon: MapPin,
-    label: "Siddharth Ghoghla Road, Bhavnagar",
+    label: "Sidsar Chitra Road, Bhavnagar",
     href: null,
   },
 ];

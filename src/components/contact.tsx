@@ -39,7 +39,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Address",
-    value: "Siddharth Ghoghla Road, Opp. HATKESH 2, Near Sahjanand Society, Bhavnagar.",
+    value: "Sidsar Chitra Road, Near HATKESH 2, Opp. Sahjanand Society, Bhavnagar.",
     href: null,
   },
   {

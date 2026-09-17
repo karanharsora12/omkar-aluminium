@@ -28,7 +28,7 @@ export default function Introduction() {
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
                   backgroundImage:
-                    "url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80')",
+                    "url('/assets/WhatsApp%20Image%202026-09-08%20at%2011.03.32%20PM.jpeg')",
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent" />

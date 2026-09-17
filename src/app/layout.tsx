@@ -50,6 +50,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://omkaralluminium.com",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "500x500" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
@@ -71,7 +78,7 @@ export default function RootLayout({
               telephone: "+91-9427751630",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Siddharth Ghoghla Road, Opp. HATKESH 2, Near Sahjanand Society",
+                streetAddress: "Sidsar Chitra Road, Near HATKESH 2, Opp. Sahjanand Society",
                 addressLocality: "Bhavnagar",
                 addressRegion: "Gujarat",
                 addressCountry: "IN",
@@ -96,7 +103,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Omkar Alluminium",
               url: "https://omkaralluminium.com",
-              logo: "https://omkaralluminium.com/logo.png",
+              logo: "https://omkaralluminium.com/icon.png",
               description:
                 "Crafting Alluminium Excellence. You Desire, We Display.",
             }),

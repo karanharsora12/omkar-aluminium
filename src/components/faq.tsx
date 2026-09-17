@@ -38,7 +38,7 @@ const faqs = [
   {
     question: "How can I request a quotation?",
     answer:
-      "You can request a quotation by calling us at 94277 51630 or 99984 54234, sending a WhatsApp message, filling out the enquiry form on our website, or visiting our office on Siddharth Ghoghla Road, Bhavnagar.",
+      "You can request a quotation by calling us at 94277 51630 or 99984 54234, sending a WhatsApp message, filling out the enquiry form on our website, or visiting our office on  Sidsar Chitra Road, Bhavnagar.",
   },
   {
     question: "How long does an aluminium project take?",

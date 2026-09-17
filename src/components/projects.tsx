@@ -12,7 +12,7 @@ const projects = [
     description: "Aluminium windows & doors",
     category: "Residential",
     location: "Bhavnagar",
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+    image: "/assets/WhatsApp%20Image%202026-09-08%20at%2011.01.59%20PM%20%281%29.jpeg",
     span: "col-span-1 row-span-1",
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     description: "Aluminium partitions & glass",
     category: "Office",
     location: "Bhavnagar",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+    image: "/assets/WhatsApp%20Image%202026-09-08%20at%2011.04.11%20PM.jpeg",
     span: "col-span-1 row-span-2",
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     description: "Aluminium facade & sliding windows",
     category: "Commercial",
     location: "Bhavnagar",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    image: "/assets/WhatsApp%20Image%202026-09-08%20at%2011.02.42%20PM.jpeg",
     span: "col-span-1 row-span-1",
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     description: "Sliding doors & powder coating",
     category: "Residential",
     location: "Sihor",
-    image: "https://images.unsplash.com/photo-1600607687644-c7f34b5e7a84?w=800&q=80",
+    image: "/assets/WhatsApp%20Image%202026-09-08%20at%2011.03.32%20PM%20%281%29.jpeg",
     span: "col-span-1 row-span-1",
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     description: "Aluminium grills & facades",
     category: "Architectural",
     location: "Bhavnagar",
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80",
+    image: "/assets/WhatsApp%20Image%202026-09-08%20at%2011.01.58%20PM%20%281%29.jpeg",
     span: "col-span-1 row-span-2",
   },
   {
@@ -52,7 +52,7 @@ const projects = [
     description: "Aluminium doors & partitions",
     category: "Commercial",
     location: "Bhavnagar",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    image: "/assets/WhatsApp%20Image%202026-09-08%20at%2011.02.45%20PM%20%281%29.jpeg",
     span: "col-span-1 row-span-1",
   },
 ];
